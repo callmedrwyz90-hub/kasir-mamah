@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir Mamah</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff477e">
+    <link rel="apple-touch-icon" href="icon.png.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <header>
+            <h1>🛒 Kasir Mamah</h1>
+            <p>Catat belanjaan praktis & gokil!</p>
+        </header>
+        <div class="input-box">
+            <input type="text" id="itemName" placeholder="Nama Barang (Cth: Beras)" autocomplete="off">
+            <input type="number" id="itemPrice" placeholder="Harga (Cth: 15000)" inputmode="numeric">
+            <button class="add-btn" id="addBtn">Tambah ke Daftar</button>
+        </div>
+        <div class="list-section" id="listContainer"></div>
+        <div class="footer">
+            <div class="total-container">
+                <span>TOTAL:</span>
+                <span id="totalPrice">Rp 0</span>
+            </div>
+            <button class="reset-btn" id="resetBtn">Hapus Semua Catatan</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
